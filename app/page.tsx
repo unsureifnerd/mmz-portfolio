@@ -194,32 +194,43 @@ export default function Home() {
           >
             HI, I'm
           </h1>
-          <div className={`text-5xl sm:text-7xl font-black mt-4 ${scrambling ? 'counter-effect' : ''}`}>
-            {displayText.split('').map((char, index) => {
-              const style = currentVariation.styles[index] || "normal";
-              let className = "";
-              let fontSize = "1em";
+          <div
+            style={{
+              height: '120px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              overflow: 'visible',
+              marginTop: '1rem'
+            }}
+          >
+            <div className={`text-5xl sm:text-7xl font-black ${scrambling ? 'counter-effect' : ''}`} style={{ lineHeight: '1' }}>
+              {displayText.split('').map((char, index) => {
+                const style = currentVariation.styles[index] || "normal";
+                let className = "";
+                let fontSize = "1em";
 
-              if (style === "chromatic" && !scrambling) className = "name-chromatic";
-              if (style === "bounce" && !scrambling) className = "name-bounce";
-              if (style === "glitch" && !scrambling) className = "name-glitch";
-              if (style === "big") fontSize = "1.3em";
-              if (style === "huge") fontSize = "1.6em";
+                if (style === "chromatic" && !scrambling) className = "name-chromatic";
+                if (style === "bounce" && !scrambling) className = "name-bounce";
+                if (style === "glitch" && !scrambling) className = "name-glitch";
+                if (style === "big") fontSize = "1.3em";
+                if (style === "huge") fontSize = "1.6em";
 
-              return (
-                <span
-                  key={index}
-                  className={className}
-                  style={{
-                    fontSize,
-                    display: 'inline-block',
-                    transform: `rotate(${Math.random() * 6 - 3}deg)`,
-                  }}
-                >
-                  {char}
-                </span>
-              );
-            })}
+                return (
+                  <span
+                    key={index}
+                    className={className}
+                    style={{
+                      fontSize,
+                      display: 'inline-block',
+                      transform: `rotate(${Math.random() * 6 - 3}deg)`,
+                    }}
+                  >
+                    {char}
+                  </span>
+                );
+              })}
+            </div>
           </div>
         </div>
         <p

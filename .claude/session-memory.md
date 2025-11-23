@@ -192,3 +192,28 @@ Last working state: Dynamic typing header with nav tilt animation, fully chaotic
 
 ## Session End: 2025-11-23 (Evening)
 Last working state: About page complete (pending photos), typing header working with smooth nav tilt, both pages functional
+
+---
+
+## Session Update: 2025-11-23 (Late Session - Resumed)
+
+### Homepage Name Section Fixed
+- Location: `/app/page.tsx` lines 197-234
+- Issue: Scrambling name with size variations (1.3x, 1.6x) was causing vertical page expansion
+- Solution: Wrapped name in fixed-height container (120px) with overflow: visible
+- Implementation details:
+  - Container uses flexbox (align-items: center, justify-content: center)
+  - Fixed height prevents layout shift when character sizes change
+  - overflow: visible allows larger characters to extend beyond container without affecting page flow
+  - lineHeight: 1 minimizes extra spacing
+- Result: Name can scale or overlap without disturbing page size
+
+### Page Overflow Fixes Summary
+1. **Horizontal overflow**: Fixed with `overflow-x: hidden` on html and body
+2. **Animated elements at bottom**: Fixed by wrapping layout in overflow:hidden container
+3. **Name vertical expansion**: Fixed with fixed-height container (120px)
+
+---
+
+## Session End: 2025-11-23 (Late)
+Last working state: All overflow issues resolved, homepage name constrained, both pages fully functional
