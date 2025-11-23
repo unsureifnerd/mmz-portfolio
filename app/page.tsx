@@ -9,17 +9,26 @@ interface Project {
   description: string;
   tags: string[];
   featured?: boolean;
+  url?: string;
 }
 
 const projects: Project[] = [
   {
-    id: "example-project",
-    title: "Example Project",
-    description: "This is a sample project to demonstrate the layout. Replace this with your actual projects.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
+    id: "accha-chai-pwa",
+    title: "Accha Chai ☕",
+    description: "A community-driven Progressive Web App for discovering and sharing the best chai stalls across India. Features interactive maps, real-time ratings, photo uploads, and installable native app experience. Built with React 19, Firebase, and Google Maps APIs.",
+    tags: ["React 19", "PWA", "Firebase", "Google Maps", "Vite"],
     featured: true,
+    url: "https://accha-chai.web.app"
   },
-  // Add more projects here
+  {
+    id: "kku-university-demo",
+    title: "KKU University Demo Site",
+    description: "A modern, responsive university website demo featuring scroll-triggered animations, number counters, form handling with ticket generation, and accessibility features. Built with React and modern CSS techniques.",
+    tags: ["React", "Animations", "CSS", "Responsive Design", "Accessibility"],
+    featured: true,
+    url: "https://kku-site.netlify.app/"
+  },
 ];
 
 const nameTexts = ["Mozammil", "Moz", "MMZ", "moZAMMil", "M0z@mm!l", "MoZaMmIl", "mOZAMMIL", "mozammil", "M.M.Z"];
@@ -277,7 +286,9 @@ export default function Home() {
             return (
             <Link
               key={project.id}
-              href={`/projects/${project.id}`}
+              href={project.url || `/projects/${project.id}`}
+              target={project.url ? "_blank" : undefined}
+              rel={project.url ? "noopener noreferrer" : undefined}
               className="group border-4 border-black rounded-lg p-6 transition-all hover:shadow-lg"
               style={{
                 transform: `rotate(${rotations[index % rotations.length]}) ${translations[index % translations.length]}`,
