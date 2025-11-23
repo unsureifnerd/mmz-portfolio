@@ -289,31 +289,33 @@ export default function Home() {
               href={project.url || `/projects/${project.id}`}
               target={project.url ? "_blank" : undefined}
               rel={project.url ? "noopener noreferrer" : undefined}
-              className="group border-4 border-black rounded-lg p-6 transition-all hover:shadow-lg"
+              className="group border-4 border-black rounded-lg p-6 transition-all hover:shadow-lg bg-white"
               style={{
                 transform: `rotate(${rotations[index % rotations.length]}) ${translations[index % translations.length]}`,
                 marginTop: `${15 + (index * 8)}px`,
-                background: bgColor,
                 boxShadow: '6px 6px 0 rgba(0, 0, 0, 0.3)'
               }}
             >
               <div className="space-y-3" style={{ transform: 'rotate(-0.6deg)' }}>
                 <h3
-                  className="text-xl font-semibold transition-colors"
+                  className="text-xl font-bold transition-colors"
                   style={{
                     transform: `rotate(${index % 2 === 0 ? '-' : ''}1.8deg) translateX(${index % 2 === 0 ? '-' : ''}3px)`,
                     display: 'inline-block',
-                    color: 'white',
-                    textShadow: '3px 3px 0 black'
+                    color: bgColor,
+                    textShadow: 'none',
+                    borderBottom: `4px solid ${bgColor}`,
+                    paddingBottom: '4px'
                   }}
                 >
                   {project.title}
                 </h3>
                 <p
-                  className="text-white font-semibold"
+                  className="font-medium"
                   style={{
                     transform: 'rotate(0.9deg) translateY(2px)',
-                    textShadow: '2px 2px 0 rgba(0,0,0,0.3)'
+                    color: '#1e293b',
+                    lineHeight: '1.6'
                   }}
                 >
                   {project.description}
@@ -324,10 +326,12 @@ export default function Home() {
                     return (
                     <span
                       key={tag}
-                      className="text-xs px-2 py-1 bg-white border-2 border-black rounded hover:bg-black hover:text-white transition-all cursor-default"
+                      className="text-xs font-semibold px-3 py-1 border-2 border-black rounded hover:scale-105 transition-all cursor-default"
                       style={{
                         transform: `rotate(${tagRotations[tagIndex % tagRotations.length]}) translateY(${tagIndex % 2 === 0 ? '-' : ''}1px)`,
-                        display: 'inline-block'
+                        display: 'inline-block',
+                        background: bgColor,
+                        color: '#ffffff'
                       }}
                     >
                       {tag}
