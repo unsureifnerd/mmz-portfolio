@@ -18,10 +18,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#fbbf24" />
       </head>
       <body className="antialiased">
-        <DynamicNav />
-        <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          {children}
-        </main>
+        <div style={{ position: 'relative', overflow: 'hidden', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+          <DynamicNav />
+          <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12" style={{ flex: 1 }}>
+            {children}
+          </main>
         <footer
           className="border-t-4 border-black mt-auto"
           style={{
@@ -47,6 +48,7 @@ export default function RootLayout({
             </p>
           </div>
         </footer>
+        </div>
       </body>
     </html>
   );
