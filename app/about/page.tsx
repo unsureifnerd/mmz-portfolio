@@ -1,12 +1,30 @@
 export default function About() {
   const skills = [
+    "HTML",
+    "CSS",
     "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Tailwind CSS",
+    "Python",
     "Git",
+    "Firebase",
+    "SQL",
+    "UI Design",
+    "Figma",
+    "Wireframing",
+    "Prototyping",
+    "Branding",
+    "Research",
+    "Data Visualization",
+    "Community Mapping",
+    "Premiere Pro",
+    "DaVinci Resolve",
+    "Blender",
+    "Storyboarding",
+    "Canva",
+    "AI Tools",
+    "Automation",
+    "Notion",
+    "Obsidian",
+    "Excel",
   ];
 
   const skillColors = ['#ff6b9d', '#4ade80', '#818cf8', '#fbbf24'];
@@ -33,14 +51,24 @@ export default function About() {
           About Me
         </h1>
 
-        <div className="mx-auto border-4 border-black rounded-lg p-6 bg-white" style={{ maxWidth: '700px', transform: 'rotate(0.8deg)', boxShadow: '8px 8px 0 rgba(0, 0, 0, 0.3)' }}>
+        <div className="mx-auto border-4 border-black rounded-lg p-6 bg-white" style={{ maxWidth: '800px', transform: 'rotate(0.8deg)', boxShadow: '8px 8px 0 rgba(0, 0, 0, 0.3)' }}>
           <p className="text-lg leading-relaxed mb-4">
-            Hi! I&apos;m <span style={{ background: '#ff6b9d', color: '#ffffff', textShadow: '2px 2px 0 #000000', padding: '2px 6px', borderRadius: '2px' }}>Mozammil</span>, a developer and creator. I love building
-            web applications, exploring new technologies, and bringing ideas to life.
+            <span style={{ background: '#ff6b9d', color: '#ffffff', textShadow: '2px 2px 0 #000000', padding: '2px 6px', borderRadius: '2px' }}>Mozammil</span> does not work in straight lines. He moves between ideas unpredictably, driven by impulse, curiosity, and experimentation. Projects appear, shift direction, collide into each other, or vanish without warning. To him, that is not chaos by accident — it is chaos by design.
           </p>
-          <p className="text-lg leading-relaxed">
-            This portfolio showcases my projects, experiments, and technical work.
-            Feel free to explore and reach out if you&apos;d like to connect.
+          <p className="text-lg leading-relaxed mb-4">
+            He rejects fixed labels, predefined roles, or professional identities. He is not positioning himself as a specialist, an expert, or a neatly packaged creator. He refuses the expectation to define himself through a single craft, discipline, or industry.
+          </p>
+          <p className="text-lg leading-relaxed mb-4">
+            This space exists purely for exploration. It is where he builds freely: experiments, prototypes, unfinished fragments, unconventional concepts, failures, and occasional breakthroughs. There is no narrative of mastery or linear progress here. Only motion.
+          </p>
+          <p className="text-lg leading-relaxed mb-4">
+            He uses whatever tools allow him to chase ideas, including AI, code, randomness, and instinct. He does not owe consistency, explanations, or a clear destination.
+          </p>
+          <p className="text-lg leading-relaxed font-bold mb-4">
+            This is not a portfolio in the traditional sense.
+          </p>
+          <p className="text-lg leading-relaxed font-bold">
+            It is a playground for creation without restraint.
           </p>
         </div>
       </section>

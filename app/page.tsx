@@ -239,9 +239,8 @@ export default function Home() {
             transform: 'rotate(1.8deg)',
           }}
         >
-          I build web applications, experimental demos, and creative projects.
-          This is my playground where I showcase everything I work on - technical experiments,
-          wild ideas, side projects, and everything in between. No rules, no limits, just pure creation.
+          No straight lines. No fixed labels. Just chaos by design. Experiments, prototypes,
+          unfinished fragments, and occasional breakthroughs. This is not a traditional portfolio...
         </p>
         <div className="flex justify-center">
           <Link
