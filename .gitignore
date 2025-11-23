@@ -37,3 +37,5 @@ next-env.d.ts
 
 # personal notes
 about-me.md
+.claude/session-memory.md
+problems/

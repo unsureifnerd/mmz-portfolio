@@ -35,12 +35,12 @@ export default function About() {
 
         <div className="mx-auto border-4 border-black rounded-lg p-6 bg-white" style={{ maxWidth: '700px', transform: 'rotate(0.8deg)', boxShadow: '8px 8px 0 rgba(0, 0, 0, 0.3)' }}>
           <p className="text-lg leading-relaxed mb-4">
-            Hi! I'm <span style={{ background: '#ff6b9d', color: '#ffffff', textShadow: '2px 2px 0 #000000', padding: '2px 6px', borderRadius: '2px' }}>Mozammil</span>, a developer and creator. I love building
+            Hi! I&apos;m <span style={{ background: '#ff6b9d', color: '#ffffff', textShadow: '2px 2px 0 #000000', padding: '2px 6px', borderRadius: '2px' }}>Mozammil</span>, a developer and creator. I love building
             web applications, exploring new technologies, and bringing ideas to life.
           </p>
           <p className="text-lg leading-relaxed">
             This portfolio showcases my projects, experiments, and technical work.
-            Feel free to explore and reach out if you'd like to connect.
+            Feel free to explore and reach out if you&apos;d like to connect.
           </p>
         </div>
       </section>
@@ -81,7 +81,7 @@ export default function About() {
 
         <div className="mx-auto border-4 border-black rounded-lg p-6 bg-white" style={{ maxWidth: '600px', transform: 'rotate(-0.5deg)', boxShadow: '8px 8px 0 rgba(0, 0, 0, 0.3)' }}>
           <p className="text-lg mb-6">
-            I'm always open to interesting conversations and opportunities.
+            I&apos;m always open to interesting conversations and opportunities.
           </p>
           <div className="flex flex-col gap-3">
             <a

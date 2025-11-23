@@ -179,7 +179,7 @@ export default function Home() {
       {/* Comic dialog box */}
       <div className="comic-dialog mb-8 animate-wind mx-auto" style={{ maxWidth: '500px', transform: 'rotate(-1.5deg)' }}>
         <p className="text-lg text-center" style={{ transform: 'rotate(0.8deg)' }}>
-          Welcome to the CHAOS ZONE! Nothing here makes sense, and that's the point!
+          Welcome to the CHAOS ZONE! Nothing here makes sense, and that&apos;s the point!
         </p>
       </div>
 
@@ -192,7 +192,7 @@ export default function Home() {
               display: 'inline-block',
             }}
           >
-            HI, I'm
+            HI, I&apos;m
           </h1>
           <div
             style={{
