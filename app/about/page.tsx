@@ -113,7 +113,7 @@ export default function About() {
           </p>
           <div className="flex flex-col gap-3">
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:nerdunsure+web@gmail.com?body=Please don't edit the email address. Changing it may delay or prevent my reply."
               className="font-bold text-lg hover:scale-105 transition-transform inline-block"
               style={{
                 borderBottom: '3px solid #ff6b9d',
@@ -122,10 +122,10 @@ export default function About() {
                 transform: 'rotate(0.5deg)',
               }}
             >
-              your.email@example.com
+              Email
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/unsureifnerd"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-lg hover:scale-105 transition-transform inline-block"
@@ -137,20 +137,6 @@ export default function About() {
               }}
             >
               GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-bold text-lg hover:scale-105 transition-transform inline-block"
-              style={{
-                borderBottom: '3px solid #818cf8',
-                paddingBottom: '4px',
-                color: '#1e293b',
-                transform: 'rotate(1.2deg)',
-              }}
-            >
-              LinkedIn
             </a>
           </div>
         </div>

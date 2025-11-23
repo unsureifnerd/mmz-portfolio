@@ -1,188 +1,107 @@
-# MMZ Portfolio - Chaos by Design
+# Mozammil Sheikh - Portfolio
 
-An experimental, chaotic portfolio website that rejects traditional design rules. Built with Next.js, TypeScript, and Tailwind CSS.
+**Live Site:** [zeroin.agency](https://zeroin.agency)
 
-**Philosophy:** This is not a traditional portfolio. It's a playground for creation without restraint.
+---
 
-## Live Site
+## About This Portfolio
 
-🌐 [Your Portfolio URL Here]
+This is not a traditional portfolio.
 
-## Features
+It's an experimental space that rejects conventional design rules - intentionally chaotic, misaligned, and unpredictable. Everything here is chaos by design, not by accident.
 
-- **Chaotic Aesthetic** - Intentionally misaligned, tilted elements with random animations
-- **Dynamic Typing Header** - Name variations that type/delete with dynamic nav tilt
-- **Scattered Elements** - Floating emojis, shapes, and text with slow animations
-- **Name Scrambling** - Homepage name with random chromatic/bounce/glitch effects
-- **Manifesto-Style About** - Philosophical "chaos by design" approach
-- **Real Projects** - Showcase actual work (PWAs, web apps, demos)
-- **Responsive Design** - Works on all screen sizes, overflow-contained
-- **Static Export** - Deployed as static site to Netlify
+**Philosophy:**
+> Mozammil does not work in straight lines. He moves between ideas unpredictably, driven by impulse, curiosity, and experimentation. Projects appear, shift direction, collide into each other, or vanish without warning. To him, that is not chaos by accident — it is chaos by design.
 
-## Projects Showcased
+---
+
+## Featured Projects
 
 ### Accha Chai ☕
-- **Type:** Progressive Web App
-- **Tech:** React 19, Firebase, Google Maps API, Vite
-- **Features:** Community-driven chai stall discovery, interactive maps, ratings, photo uploads
+**A community-driven Progressive Web App for chai lovers**
+
+Discover and share the best chai stalls across India through an interactive map. Community ratings, photo uploads, and installable as a native app on iOS and Android.
+
+- **Tech:** React 19, Firebase, Google Maps API, Vite, Tailwind CSS
+- **Type:** Progressive Web App (PWA)
 - **Status:** v0.4.0 - Private Beta
-- **URL:** https://accha-chai.web.app
+- **Visit:** [accha-chai.web.app](https://accha-chai.web.app)
+
+**Key Features:**
+- Interactive map-based exploration
+- Community rating system (Accha! / Thik-Thak / Nahi)
+- Photo uploads with fullscreen viewing
+- User profiles and contribution tracking
+- Favorites management and social sharing
+- Address search with autocomplete
+- Native app experience (installable)
+
+---
 
 ### KKU University Demo Site
+**Modern responsive university website demo**
+
+A professional demo showcasing scroll-triggered animations, interactive counters, form handling, and accessibility features.
+
+- **Tech:** React, Intersection Observer, Modern CSS
 - **Type:** Demo Website
-- **Tech:** React, Animations, CSS
-- **Features:** Scroll-triggered animations, number counters, form handling, accessibility
-- **URL:** https://kku-site.netlify.app/
+- **Visit:** [kku-site.netlify.app](https://kku-site.netlify.app/)
+
+**Key Features:**
+- Scroll-triggered animations
+- Number counter animations
+- Form handling with ticket generation
+- Mobile-first responsive design
+- SEO optimized
+- WCAG accessibility compliance
+
+---
 
 ## Tech Stack
 
-- **Framework:** Next.js 14 with App Router
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS with custom animations
-- **Deployment:** Netlify (static export)
-- **Config:** Static export mode for edge deployment
+This portfolio is built with:
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Custom animations and styling
+- **Netlify** - Static site deployment
 
-## Getting Started
+---
 
-### Development Server
+## Design Elements
 
-```bash
-npm install
-npm run dev
-```
-
-Visit [http://localhost:3000](http://localhost:3000)
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-Generates static output in `/out` folder.
-
-## Project Structure
-
-```
-mmz-portfolio/
-├── app/
-│   ├── components/
-│   │   ├── DynamicNav.tsx      # Nav with dynamic tilt
-│   │   └── TypingHeader.tsx    # Typing animation
-│   ├── about/
-│   │   └── page.tsx            # Manifesto-style about page
-│   ├── globals.css             # Custom animations & styles
-│   ├── layout.tsx              # Root layout with overflow handling
-│   └── page.tsx                # Chaotic homepage with projects
-├── .claude/
-│   └── session-memory.md       # AI context continuity (gitignored)
-├── next.config.mjs             # Static export config
-└── tailwind.config.ts          # Tailwind configuration
-```
-
-## Key Components
-
-### DynamicNav
-- Navigation bar that tilts based on typing header length
-- Tilt range: 0deg (empty) → -5deg (max length)
-- Smooth 0.6s transition
-
-### TypingHeader
-- Types/deletes random name variations
-- 11 variations including typos (MMZ, Mozammil, M0z@mm!l, etc.)
-- Reports text length to parent for nav tilt
-
-### Animations
-All animations intentionally slowed (2x slower) for reduced distraction:
-- `float-random`: 12s
-- `wobble`: 8s
-- `shake`: 6s
-- `tilt-shake`: 10s
-- `wind`: 8s
-- `chromatic-shift`: 2-3s
-- `glitch`: 0.5s
-
-## Design Philosophy
-
-**From about-me.md:**
-> Mozammil does not work in straight lines. He moves between ideas unpredictably, driven by impulse, curiosity, and experimentation. Projects appear, shift direction, collide into each other, or vanish without warning. To him, that is not chaos by accident — it is chaos by design.
-
-**Visual Elements:**
+**Visual Style:**
 - Yellow diagonal striped background
-- Comic-style boxes with thick borders
-- Random tilts and rotations
+- Intentionally misaligned elements
+- Random rotations and tilts
+- Comic-style borders and shadows
 - Chromatic aberration effects
-- Selection color: Pink (#ff6b9d) with black shadow
-- No cursive fonts (readability maintained)
+- Slow, deliberate animations
 
-## Deployment
-
-### Netlify
-
-1. Push to GitHub
-2. Connect repository to Netlify
-3. Build settings:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `out`
-4. Netlify auto-deploys on push
-
-### Configuration
-
-`next.config.mjs`:
-```javascript
-const nextConfig = {
-  output: 'export',
-};
-```
-
-## Customization
-
-### Adding Projects
-
-Edit `app/page.tsx`:
-
-```typescript
-const projects: Project[] = [
-  {
-    id: "project-id",
-    title: "Project Title",
-    description: "Brief description...",
-    tags: ["React", "TypeScript"],
-    featured: true,
-    url: "https://live-url.com"  // External URL (opens in new tab)
-  },
-];
-```
-
-### Updating About Page
-
-Edit `app/about/page.tsx`:
-- Update bio paragraphs
-- Modify skills array
-- Change contact links
-
-### Color Palette
-
-Defined in `globals.css`:
+**Color Palette:**
 - Pink: `#ff6b9d`
 - Green: `#4ade80`
 - Purple: `#818cf8`
 - Yellow: `#fbbf24`
 - Dark: `#1e293b`
-- Background: `#fef3c7` / `#fde68a` (stripes)
 
-## Known Features
+---
 
-- Homepage name constrained to 120px height to prevent vertical expansion
-- Overflow hidden on layout to prevent animated elements from expanding page
-- All scattered elements use `pointer-events-none`
-- About page: "organized chaos" with fewer elements than homepage
-- Session memory maintained in `.claude/session-memory.md` (gitignored)
+## Contact
 
-## License
+Want to connect? Visit the [About page](https://zeroin.agency/about) for contact information.
 
-Personal portfolio - All rights reserved © 2025 Mozammil Sheikh
+---
+
+## About the Creator
+
+**Mozammil Sheikh** is a creator who refuses fixed labels and professional identities. This portfolio showcases experiments, prototypes, unfinished fragments, unconventional concepts, and occasional breakthroughs.
+
+There is no narrative of mastery or linear progress here. Only motion.
 
 ---
 
 *This is not a portfolio in the traditional sense. It is a playground for creation without restraint.*
+
+---
+
+© 2025 Mozammil Sheikh. All rights reserved.
